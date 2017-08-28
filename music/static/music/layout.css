@@ -1,0 +1,131 @@
+body{
+   background: white url("images/images (1).jpg");
+}
+
+.navbar{border-radius: 0;}
+
+.navbar-brand, .container-fluid {  font-family: Georgia, cursive;}
+
+.img-responsive{height: 400px;}
+
+#song_page{
+    margin: 50px 200px 0 200px;
+    height: 480px;
+    width: 800px;
+    background-color: white;
+    border-radius: 4px;
+    overflow: auto;
+}
+
+.video_container{
+    margin: 50px 30px 0 1080px;
+    background-color: white;
+    overflow: auto;
+    height: 480px;
+    width: 400px;
+}
+
+#btn{  margin-left: 650px;  }
+
+#song_btn{ margin : 10px 0 0 650px; }
+
+#player_1{
+    margin-left: 400px;
+    display: inline-table;
+    margin-top: -20px;
+}
+
+#player_2{
+    margin-left: 400px;
+    display: inline-table;
+    margin-top: -10px;
+}
+
+#promt{
+    padding: 20px;
+    width: 600px;
+    min-height: 300px;
+    background-color: white;
+    margin:auto;
+    font-family: Georgia,cursive;
+    font-size: 16px;
+
+}
+
+#song_container{
+    margin: 0 30px 0 350px;
+    height: 400px;
+    width: 800px;
+    background-color: white;
+    border-radius: 4px;
+    overflow: auto;
+}
+
+p.heading{
+    background: #0e90d2;
+    color: white;
+    height: 30px;
+    margin: 20px 0 0 0;
+    font-family: Georgia,cursive;
+    font-style: italic;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+p.border{
+    height: 1.5px;
+    margin: 10px 10px 0 -20px;
+    background: #b3b3b3;
+}
+
+li{  list-style: square;  }
+
+a{
+    text-decoration:none;
+    color:black;
+    font-weight: lighter;
+}
+
+a:hover{color: #0044cc ;text-decoration:none; }
+
+p.details{
+    font-family: Georgia,cursive;
+    font-style: italic;
+    font-size: 18px;
+}
+
+h4.song_title{
+    font-family: Georgia,cursive;
+    font-style: italic;
+    font-size: 16px;
+    padding-left: 20px;
+    list-style: disc;
+}
+
+h2.title{
+    font-family: Georgia,cursive;
+    font-style: italic;
+    font-size: 25px;
+}
+
+h4.song{
+    display: inline;
+    float: left;
+    margin-top:-25px;
+    font-family: Georgia,cursive;
+    font-style: italic;
+    font-size: 16px;
+}
+
+h4.album{
+    font-family: Georgia,cursive;
+    font-style: italic;
+    font-size: 16px;
+}
+
+h3.error {
+    color: red;
+    font-style:italic;
+    margin-top: -10px;
+    font-family: Georgia,cursive;
+}

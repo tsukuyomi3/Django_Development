@@ -1,0 +1,42 @@
+{% extends 'music/base.html' %}
+{% block title%}Albums{% endblock %}
+
+{% block body %}
+        <div class="row-fluid"><br><br>
+            <div class="col-md-3 col-sm-3">
+                <div class="thumbnail">
+                    <!--- Album Logo-->
+                    <img src="{{ album.album_logo.url }}" class="img-responsive">
+                    <div class="caption">
+                           <h2 class="title">{{ album.album_title }}</h2>
+                            <p class="details">{{ album.artist }}&nbsp;&nbsp;&nbsp;{{ album.genre }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% if error_message %}
+  <p><strong>{{ error_message }}</strong></p>
+{% endif %}
+
+    <div id="song_container"><br>
+       <button class="btn btn-sm btn-primary" id="btn">
+        <a href="{% url 'music:add-song'%}" style="color: white;"><span class="glyphicon">&#x2b;</span>&nbsp; Add Song</a>
+       </button>
+
+        <p class="heading"> Songs</p><br>
+    {% if album.song_set.all %}
+      {% for song in album.song_set.all %}
+          <ul>
+             <li>
+                 <h4 class="song_title">{{ song.song_title }}<br>
+                     <audio  id="player_1" src="{{ song.audio.url }}" controls></audio>
+                 </h4>
+             </li>
+          </ul>
+      {% endfor %}
+    {% else %}
+            <h3 class="error">No song to display</h3>
+    {% endif %}
+    </div>
+{% endblock %}

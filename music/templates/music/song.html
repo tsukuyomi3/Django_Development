@@ -1,0 +1,31 @@
+{% extends 'music/base.html' %}
+
+{% block title%}Songs{% endblock %}
+{% block body %}
+        <div id="song_page">
+              <button class="btn btn-sm btn-primary" id="song_btn">
+                 <a href="{% url 'music:add-song'%}" style="color: white;"><span class="glyphicon">&#x2b;</span>&nbsp; Add Song</a>
+              </button><br/>
+
+            <div>
+               <p class="heading">Songs</p>
+            </div><br/>
+             <div>
+               <p class="border"></p>
+            </div><br/><br/>
+           {% if all_song %}
+            {% for song in all_song %}
+               <ul>
+                 <li>
+                   <h4 class="song_title"><strong>Title: </strong>{{ song.song_title }}
+                       <a href="{% url 'music:detail' song.album.id %}"><h4 class="album"><strong>Album: </strong>{{ song.album }}</h4></a>
+                     <audio  id="player_1" src="{{ song.audio.url }}" controls></audio>
+                   </h4>
+                 </li>
+               </ul>
+            {% endfor %}
+           </div>
+        {% else %}
+            <h3>No song to display</h3>
+        {% endif %}
+{% endblock  %}

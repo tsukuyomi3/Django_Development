@@ -1,0 +1,20 @@
+{% extends 'music/base.html' %}
+
+{% block title%}Videos{% endblock %}
+{% block body %}
+    <button class="btn btn-sm btn-primary" style="margin-left:1120px;">
+        <a href="{% url 'music:add-video'%}" style="color: white;"><span class="glyphicon">&#x2b;</span>&nbsp; Add Video</a>
+    </button><br/><br/>
+
+    {% if all_video %}
+        {% for video in all_video %}
+            <div style="width: 393px; height: 300px; float: left; margin-left: 10px; background: white;">
+            <video   style="margin-top: -40px;" width="393" height="300" src="{{ video.video.url }}" controls></video>
+                <h4 class="album">{{ video.album.artist }}-{{ video.video_title }}</h4>
+            </div>
+        {% endfor %}
+
+    {% else %}
+        <h3>No videos to display</h3>
+    {% endif %}
+{% endblock  %}
