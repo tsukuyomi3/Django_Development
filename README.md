@@ -1,6 +1,8 @@
 # Mugen-Player
  
- *********1) Login Page*********
+This is an *********open source, cloud based, custom********* music sharing website with a *********custom made music player*********, where a user can listen/share to own favorite music along with their friends playlist with just few clicks!!!
+ 
+*********1) Login Page*********
  
 This is the login screen of website with a simple JWT(JSON Web Token) login feature
 
@@ -36,3 +38,4 @@ This screen lists down selected album songs along with album info in the left pa
  
  ![](screenshots/Screenshot%20(322).png)
  
+*********P.S Mugen in japanese means infinite*********
