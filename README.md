@@ -1,5 +1,5 @@
-# Mugen-Player
- *********Mugen in japanese means infinite*********
+# Mugen-Player (Mugen in japanese means infinite)
+
 This is an *********open source, cloud based, custom********* music sharing website with a *********custom made music player*********, where a user can listen/share to own favorite music along with their friends playlist with just few clicks!!!
  
 *********1) Login Page*********
